@@ -7,6 +7,51 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1 id="title">Feedback for Andro Meda Ltd.</h1>
+            <p id="description">Thank you for your time to help us improve our services</p>
+            </header>
+
     
+        <form id="survey-form" >
+               <label for="name" id="name-label">Name
+               <input class="input" id="name" type="text" id="name-label" placeholder="Full Name" required>
+               </label>
+               <label  for="email" id="email-label">Email Address
+               <input class="input" id="email" type="email" placeholder="Email Address" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+               </label>
+               <label for="number" id="number-label">Age
+               <input class="input" id="number" type="number" placeholder="Age" required min="13" max="99">
+            </label>
+
+
+
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown">
+                <option disabled selected>Choose One</option>
+                <option>Software QA</option>
+                <option>Architect</option>
+                <option>Web Developer</option>
+                <option>Android Developer</option>
+            </select>
+
+
+
+            <p>Please specify your Gender</p>
+                <label for ="male"><input class="inline" id="male" type="radio" name="choice" value="1">Male</label>
+                <label for ="female"><input class="inline"id="female" type="radio" name="choice" value="2">Female</label>
+
+
+
+        <p>What would you like to see improved?(Check all that apply)</p>  
+            <label for="val1"><input class="inline"id="val1" type="checkbox" value="1">Functionality</label>
+            <label for="val2"><input class="inline" id="val12" type="checkbox" value="2">Performance</label>
+            <label for="val3"><input class="inline" id="val13" type="checkbox" value="3">Security</label>
+            <p>Any Additional comments</p>
+            <textarea placeholder="Comments"></textarea>
+            <input type="submit" value="Submit" id="submit">
+    </form> 
+</div>  
 </body>
 </html>
